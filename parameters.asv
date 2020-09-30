@@ -1,7 +1,5 @@
-wheel_base = 1.44;
-cg_ratio = 0.4;
-l_f = wheel_base*cg_ratio;     % length between front wheel and center of mass
-l_r = wheel_base*(1 - cg_ratio);     % length between rear wheel and center of mass
+l_f = 0.5;     % length between front wheel and center of mass
+l_r = 0.5;     % length between rear wheel and center of mass
 
 epsilon = 27.72*pi/180; % camber angle
 
@@ -23,6 +21,7 @@ v = 140/3.6; %vehicle speed
 
 c_min = 1.6;
 c_max = 4.4;
+c  = c_max;
 
 calculate_matrices;
 delta_i = 0;
